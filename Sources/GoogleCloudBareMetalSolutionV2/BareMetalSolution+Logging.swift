@@ -61,14 +61,14 @@ extension Clients {
 
     public func listInstances(
       request: ListInstancesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListInstancesResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListInstancesResponse {
       try await self._intercept(
         request: request,
         options: options,
         name: "listInstances",
         action: {
           (r: ListInstancesRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.ListInstancesResponse
+            -> GoogleCloudBareMetalSolutionV2.ListInstancesResponse
           in
           return try await self.inner.listInstances(request: r, options: o)
         })
@@ -76,14 +76,14 @@ extension Clients {
 
     public func getInstance(
       request: GetInstanceRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Instance {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Instance {
       try await self._intercept(
         request: request,
         options: options,
         name: "getInstance",
         action: {
           (r: GetInstanceRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.Instance
+            -> GoogleCloudBareMetalSolutionV2.Instance
           in
           return try await self.inner.getInstance(request: r, options: o)
         })
@@ -106,14 +106,14 @@ extension Clients {
 
     public func renameInstance(
       request: RenameInstanceRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Instance {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Instance {
       try await self._intercept(
         request: request,
         options: options,
         name: "renameInstance",
         action: {
           (r: RenameInstanceRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.Instance
+            -> GoogleCloudBareMetalSolutionV2.Instance
           in
           return try await self.inner.renameInstance(request: r, options: o)
         })
@@ -211,14 +211,14 @@ extension Clients {
 
     public func listSshkeys(
       request: ListSSHKeysRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListSSHKeysResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListSSHKeysResponse {
       try await self._intercept(
         request: request,
         options: options,
         name: "listSshkeys",
         action: {
           (r: ListSSHKeysRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.ListSSHKeysResponse
+            -> GoogleCloudBareMetalSolutionV2.ListSSHKeysResponse
           in
           return try await self.inner.listSshkeys(request: r, options: o)
         })
@@ -226,14 +226,14 @@ extension Clients {
 
     public func createSshkey(
       request: CreateSSHKeyRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.SSHKey {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.SSHKey {
       try await self._intercept(
         request: request,
         options: options,
         name: "createSshkey",
         action: {
           (r: CreateSSHKeyRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.SSHKey
+            -> GoogleCloudBareMetalSolutionV2.SSHKey
           in
           return try await self.inner.createSshkey(request: r, options: o)
         })
@@ -253,14 +253,14 @@ extension Clients {
 
     public func listVolumes(
       request: ListVolumesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListVolumesResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListVolumesResponse {
       try await self._intercept(
         request: request,
         options: options,
         name: "listVolumes",
         action: {
           (r: ListVolumesRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.ListVolumesResponse
+            -> GoogleCloudBareMetalSolutionV2.ListVolumesResponse
           in
           return try await self.inner.listVolumes(request: r, options: o)
         })
@@ -268,14 +268,14 @@ extension Clients {
 
     public func getVolume(
       request: GetVolumeRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Volume {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Volume {
       try await self._intercept(
         request: request,
         options: options,
         name: "getVolume",
         action: {
           (r: GetVolumeRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.Volume
+            -> GoogleCloudBareMetalSolutionV2.Volume
           in
           return try await self.inner.getVolume(request: r, options: o)
         })
@@ -298,14 +298,14 @@ extension Clients {
 
     public func renameVolume(
       request: RenameVolumeRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Volume {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Volume {
       try await self._intercept(
         request: request,
         options: options,
         name: "renameVolume",
         action: {
           (r: RenameVolumeRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.Volume
+            -> GoogleCloudBareMetalSolutionV2.Volume
           in
           return try await self.inner.renameVolume(request: r, options: o)
         })
@@ -343,14 +343,14 @@ extension Clients {
 
     public func listNetworks(
       request: ListNetworksRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworksResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworksResponse {
       try await self._intercept(
         request: request,
         options: options,
         name: "listNetworks",
         action: {
           (r: ListNetworksRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.ListNetworksResponse
+            -> GoogleCloudBareMetalSolutionV2.ListNetworksResponse
           in
           return try await self.inner.listNetworks(request: r, options: o)
         })
@@ -358,14 +358,14 @@ extension Clients {
 
     public func listNetworkUsage(
       request: ListNetworkUsageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworkUsageResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworkUsageResponse {
       try await self._intercept(
         request: request,
         options: options,
         name: "listNetworkUsage",
         action: {
           (r: ListNetworkUsageRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.ListNetworkUsageResponse
+            -> GoogleCloudBareMetalSolutionV2.ListNetworkUsageResponse
           in
           return try await self.inner.listNetworkUsage(request: r, options: o)
         })
@@ -373,14 +373,14 @@ extension Clients {
 
     public func getNetwork(
       request: GetNetworkRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Network {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Network {
       try await self._intercept(
         request: request,
         options: options,
         name: "getNetwork",
         action: {
           (r: GetNetworkRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.Network
+            -> GoogleCloudBareMetalSolutionV2.Network
           in
           return try await self.inner.getNetwork(request: r, options: o)
         })
@@ -403,14 +403,14 @@ extension Clients {
 
     public func createVolumeSnapshot(
       request: CreateVolumeSnapshotRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot {
       try await self._intercept(
         request: request,
         options: options,
         name: "createVolumeSnapshot",
         action: {
           (r: CreateVolumeSnapshotRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot
+            -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot
           in
           return try await self.inner.createVolumeSnapshot(request: r, options: o)
         })
@@ -446,14 +446,14 @@ extension Clients {
 
     public func getVolumeSnapshot(
       request: GetVolumeSnapshotRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot {
       try await self._intercept(
         request: request,
         options: options,
         name: "getVolumeSnapshot",
         action: {
           (r: GetVolumeSnapshotRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot
+            -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot
           in
           return try await self.inner.getVolumeSnapshot(request: r, options: o)
         })
@@ -461,14 +461,14 @@ extension Clients {
 
     public func listVolumeSnapshots(
       request: ListVolumeSnapshotsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListVolumeSnapshotsResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListVolumeSnapshotsResponse {
       try await self._intercept(
         request: request,
         options: options,
         name: "listVolumeSnapshots",
         action: {
           (r: ListVolumeSnapshotsRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.ListVolumeSnapshotsResponse
+            -> GoogleCloudBareMetalSolutionV2.ListVolumeSnapshotsResponse
           in
           return try await self.inner.listVolumeSnapshots(request: r, options: o)
         })
@@ -476,14 +476,14 @@ extension Clients {
 
     public func getLun(
       request: GetLunRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Lun {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Lun {
       try await self._intercept(
         request: request,
         options: options,
         name: "getLun",
         action: {
           (r: GetLunRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.Lun
+            -> GoogleCloudBareMetalSolutionV2.Lun
           in
           return try await self.inner.getLun(request: r, options: o)
         })
@@ -491,14 +491,14 @@ extension Clients {
 
     public func listLuns(
       request: ListLunsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListLunsResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListLunsResponse {
       try await self._intercept(
         request: request,
         options: options,
         name: "listLuns",
         action: {
           (r: ListLunsRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.ListLunsResponse
+            -> GoogleCloudBareMetalSolutionV2.ListLunsResponse
           in
           return try await self.inner.listLuns(request: r, options: o)
         })
@@ -521,14 +521,14 @@ extension Clients {
 
     public func getNfsShare(
       request: GetNfsShareRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare {
       try await self._intercept(
         request: request,
         options: options,
         name: "getNfsShare",
         action: {
           (r: GetNfsShareRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.NfsShare
+            -> GoogleCloudBareMetalSolutionV2.NfsShare
           in
           return try await self.inner.getNfsShare(request: r, options: o)
         })
@@ -536,14 +536,14 @@ extension Clients {
 
     public func listNfsShares(
       request: ListNfsSharesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListNfsSharesResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListNfsSharesResponse {
       try await self._intercept(
         request: request,
         options: options,
         name: "listNfsShares",
         action: {
           (r: ListNfsSharesRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.ListNfsSharesResponse
+            -> GoogleCloudBareMetalSolutionV2.ListNfsSharesResponse
           in
           return try await self.inner.listNfsShares(request: r, options: o)
         })
@@ -581,14 +581,14 @@ extension Clients {
 
     public func renameNfsShare(
       request: RenameNfsShareRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare {
       try await self._intercept(
         request: request,
         options: options,
         name: "renameNfsShare",
         action: {
           (r: RenameNfsShareRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.NfsShare
+            -> GoogleCloudBareMetalSolutionV2.NfsShare
           in
           return try await self.inner.renameNfsShare(request: r, options: o)
         })
@@ -611,14 +611,14 @@ extension Clients {
 
     public func listProvisioningQuotas(
       request: ListProvisioningQuotasRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListProvisioningQuotasResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListProvisioningQuotasResponse {
       try await self._intercept(
         request: request,
         options: options,
         name: "listProvisioningQuotas",
         action: {
           (r: ListProvisioningQuotasRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.ListProvisioningQuotasResponse
+            -> GoogleCloudBareMetalSolutionV2.ListProvisioningQuotasResponse
           in
           return try await self.inner.listProvisioningQuotas(request: r, options: o)
         })
@@ -626,14 +626,14 @@ extension Clients {
 
     public func submitProvisioningConfig(
       request: SubmitProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.SubmitProvisioningConfigResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.SubmitProvisioningConfigResponse {
       try await self._intercept(
         request: request,
         options: options,
         name: "submitProvisioningConfig",
         action: {
           (r: SubmitProvisioningConfigRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.SubmitProvisioningConfigResponse
+            -> GoogleCloudBareMetalSolutionV2.SubmitProvisioningConfigResponse
           in
           return try await self.inner.submitProvisioningConfig(request: r, options: o)
         })
@@ -641,14 +641,14 @@ extension Clients {
 
     public func getProvisioningConfig(
       request: GetProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig {
       try await self._intercept(
         request: request,
         options: options,
         name: "getProvisioningConfig",
         action: {
           (r: GetProvisioningConfigRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+            -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
           in
           return try await self.inner.getProvisioningConfig(request: r, options: o)
         })
@@ -656,14 +656,14 @@ extension Clients {
 
     public func createProvisioningConfig(
       request: CreateProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig {
       try await self._intercept(
         request: request,
         options: options,
         name: "createProvisioningConfig",
         action: {
           (r: CreateProvisioningConfigRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+            -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
           in
           return try await self.inner.createProvisioningConfig(request: r, options: o)
         })
@@ -671,14 +671,14 @@ extension Clients {
 
     public func updateProvisioningConfig(
       request: UpdateProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig {
       try await self._intercept(
         request: request,
         options: options,
         name: "updateProvisioningConfig",
         action: {
           (r: UpdateProvisioningConfigRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+            -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
           in
           return try await self.inner.updateProvisioningConfig(request: r, options: o)
         })
@@ -686,14 +686,14 @@ extension Clients {
 
     public func renameNetwork(
       request: RenameNetworkRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Network {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Network {
       try await self._intercept(
         request: request,
         options: options,
         name: "renameNetwork",
         action: {
           (r: RenameNetworkRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.Network
+            -> GoogleCloudBareMetalSolutionV2.Network
           in
           return try await self.inner.renameNetwork(request: r, options: o)
         })
@@ -701,14 +701,14 @@ extension Clients {
 
     public func listOsimages(
       request: ListOSImagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListOSImagesResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListOSImagesResponse {
       try await self._intercept(
         request: request,
         options: options,
         name: "listOsimages",
         action: {
           (r: ListOSImagesRequest, o: GoogleCloudGax.RequestOptions) async throws
-            -> GoogleCloudBaremetalsolutionV2.ListOSImagesResponse
+            -> GoogleCloudBareMetalSolutionV2.ListOSImagesResponse
           in
           return try await self.inner.listOsimages(request: r, options: o)
         })

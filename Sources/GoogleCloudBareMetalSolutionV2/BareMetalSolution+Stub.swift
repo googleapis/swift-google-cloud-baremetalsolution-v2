@@ -28,11 +28,11 @@ extension Clients {
   protocol BareMetalSolutionStub {
     func listInstances(
       request: ListInstancesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListInstancesResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListInstancesResponse
 
     func getInstance(
       request: GetInstanceRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Instance
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Instance
 
     func updateInstance(
       request: UpdateInstanceRequest, options: GoogleCloudGax.RequestOptions
@@ -40,7 +40,7 @@ extension Clients {
 
     func renameInstance(
       request: RenameInstanceRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Instance
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Instance
 
     func resetInstance(
       request: ResetInstanceRequest, options: GoogleCloudGax.RequestOptions
@@ -68,11 +68,11 @@ extension Clients {
 
     func listSshkeys(
       request: ListSSHKeysRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListSSHKeysResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListSSHKeysResponse
 
     func createSshkey(
       request: CreateSSHKeyRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.SSHKey
+    ) async throws -> GoogleCloudBareMetalSolutionV2.SSHKey
 
     func deleteSshkey(
       request: DeleteSSHKeyRequest, options: GoogleCloudGax.RequestOptions
@@ -80,11 +80,11 @@ extension Clients {
 
     func listVolumes(
       request: ListVolumesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListVolumesResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListVolumesResponse
 
     func getVolume(
       request: GetVolumeRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Volume
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Volume
 
     func updateVolume(
       request: UpdateVolumeRequest, options: GoogleCloudGax.RequestOptions
@@ -92,7 +92,7 @@ extension Clients {
 
     func renameVolume(
       request: RenameVolumeRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Volume
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Volume
 
     func evictVolume(
       request: EvictVolumeRequest, options: GoogleCloudGax.RequestOptions
@@ -104,15 +104,15 @@ extension Clients {
 
     func listNetworks(
       request: ListNetworksRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworksResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworksResponse
 
     func listNetworkUsage(
       request: ListNetworkUsageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworkUsageResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworkUsageResponse
 
     func getNetwork(
       request: GetNetworkRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Network
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Network
 
     func updateNetwork(
       request: UpdateNetworkRequest, options: GoogleCloudGax.RequestOptions
@@ -120,7 +120,7 @@ extension Clients {
 
     func createVolumeSnapshot(
       request: CreateVolumeSnapshotRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot
+    ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot
 
     func restoreVolumeSnapshot(
       request: RestoreVolumeSnapshotRequest, options: GoogleCloudGax.RequestOptions
@@ -132,19 +132,19 @@ extension Clients {
 
     func getVolumeSnapshot(
       request: GetVolumeSnapshotRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot
+    ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot
 
     func listVolumeSnapshots(
       request: ListVolumeSnapshotsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListVolumeSnapshotsResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListVolumeSnapshotsResponse
 
     func getLun(
       request: GetLunRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Lun
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Lun
 
     func listLuns(
       request: ListLunsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListLunsResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListLunsResponse
 
     func evictLun(
       request: EvictLunRequest, options: GoogleCloudGax.RequestOptions
@@ -152,11 +152,11 @@ extension Clients {
 
     func getNfsShare(
       request: GetNfsShareRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare
+    ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare
 
     func listNfsShares(
       request: ListNfsSharesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListNfsSharesResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListNfsSharesResponse
 
     func updateNfsShare(
       request: UpdateNfsShareRequest, options: GoogleCloudGax.RequestOptions
@@ -168,7 +168,7 @@ extension Clients {
 
     func renameNfsShare(
       request: RenameNfsShareRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare
+    ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare
 
     func deleteNfsShare(
       request: DeleteNfsShareRequest, options: GoogleCloudGax.RequestOptions
@@ -176,31 +176,31 @@ extension Clients {
 
     func listProvisioningQuotas(
       request: ListProvisioningQuotasRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListProvisioningQuotasResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListProvisioningQuotasResponse
 
     func submitProvisioningConfig(
       request: SubmitProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.SubmitProvisioningConfigResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.SubmitProvisioningConfigResponse
 
     func getProvisioningConfig(
       request: GetProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
 
     func createProvisioningConfig(
       request: CreateProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
 
     func updateProvisioningConfig(
       request: UpdateProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
 
     func renameNetwork(
       request: RenameNetworkRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Network
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Network
 
     func listOsimages(
       request: ListOSImagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListOSImagesResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListOSImagesResponse
 
     func listLocations(
       request: GoogleCloudLocation.ListLocationsRequest, options: GoogleCloudGax.RequestOptions
@@ -225,7 +225,7 @@ extension Clients {
 
     public func listInstances(
       request: ListInstancesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListInstancesResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListInstancesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -244,12 +244,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.ListInstancesResponse.self, from: data)
+        GoogleCloudBareMetalSolutionV2.ListInstancesResponse.self, from: data)
     }
 
     public func getInstance(
       request: GetInstanceRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Instance {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Instance {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -264,7 +264,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.Instance.self, from: data)
+        GoogleCloudBareMetalSolutionV2.Instance.self, from: data)
     }
 
     public func updateInstance(
@@ -296,7 +296,7 @@ extension Clients {
 
     public func renameInstance(
       request: RenameInstanceRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Instance {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Instance {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -313,7 +313,7 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.Instance.self, from: data)
+        GoogleCloudBareMetalSolutionV2.Instance.self, from: data)
     }
 
     public func resetInstance(
@@ -450,7 +450,7 @@ extension Clients {
 
     public func listSshkeys(
       request: ListSSHKeysRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListSSHKeysResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListSSHKeysResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -468,12 +468,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.ListSSHKeysResponse.self, from: data)
+        GoogleCloudBareMetalSolutionV2.ListSSHKeysResponse.self, from: data)
     }
 
     public func createSshkey(
       request: CreateSSHKeyRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.SSHKey {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.SSHKey {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -494,7 +494,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.SSHKey.self, from: data)
+        GoogleCloudBareMetalSolutionV2.SSHKey.self, from: data)
     }
 
     public func deleteSshkey(
@@ -517,7 +517,7 @@ extension Clients {
 
     public func listVolumes(
       request: ListVolumesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListVolumesResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListVolumesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -536,12 +536,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.ListVolumesResponse.self, from: data)
+        GoogleCloudBareMetalSolutionV2.ListVolumesResponse.self, from: data)
     }
 
     public func getVolume(
       request: GetVolumeRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Volume {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Volume {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -556,7 +556,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.Volume.self, from: data)
+        GoogleCloudBareMetalSolutionV2.Volume.self, from: data)
     }
 
     public func updateVolume(
@@ -587,7 +587,7 @@ extension Clients {
 
     public func renameVolume(
       request: RenameVolumeRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Volume {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Volume {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -604,7 +604,7 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.Volume.self, from: data)
+        GoogleCloudBareMetalSolutionV2.Volume.self, from: data)
     }
 
     public func evictVolume(
@@ -653,7 +653,7 @@ extension Clients {
 
     public func listNetworks(
       request: ListNetworksRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworksResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworksResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -672,12 +672,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.ListNetworksResponse.self, from: data)
+        GoogleCloudBareMetalSolutionV2.ListNetworksResponse.self, from: data)
     }
 
     public func listNetworkUsage(
       request: ListNetworkUsageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworkUsageResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworkUsageResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.location as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.location' is not set or is empty")
@@ -692,12 +692,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.ListNetworkUsageResponse.self, from: data)
+        GoogleCloudBareMetalSolutionV2.ListNetworkUsageResponse.self, from: data)
     }
 
     public func getNetwork(
       request: GetNetworkRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Network {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Network {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -712,7 +712,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.Network.self, from: data)
+        GoogleCloudBareMetalSolutionV2.Network.self, from: data)
     }
 
     public func updateNetwork(
@@ -743,7 +743,7 @@ extension Clients {
 
     public func createVolumeSnapshot(
       request: CreateVolumeSnapshotRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -762,7 +762,7 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.VolumeSnapshot.self, from: data)
+        GoogleCloudBareMetalSolutionV2.VolumeSnapshot.self, from: data)
     }
 
     public func restoreVolumeSnapshot(
@@ -809,7 +809,7 @@ extension Clients {
 
     public func getVolumeSnapshot(
       request: GetVolumeSnapshotRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -824,12 +824,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.VolumeSnapshot.self, from: data)
+        GoogleCloudBareMetalSolutionV2.VolumeSnapshot.self, from: data)
     }
 
     public func listVolumeSnapshots(
       request: ListVolumeSnapshotsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListVolumeSnapshotsResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListVolumeSnapshotsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -847,12 +847,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.ListVolumeSnapshotsResponse.self, from: data)
+        GoogleCloudBareMetalSolutionV2.ListVolumeSnapshotsResponse.self, from: data)
     }
 
     public func getLun(
       request: GetLunRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Lun {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Lun {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -867,12 +867,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.Lun.self, from: data)
+        GoogleCloudBareMetalSolutionV2.Lun.self, from: data)
     }
 
     public func listLuns(
       request: ListLunsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListLunsResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListLunsResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -890,7 +890,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.ListLunsResponse.self, from: data)
+        GoogleCloudBareMetalSolutionV2.ListLunsResponse.self, from: data)
     }
 
     public func evictLun(
@@ -917,7 +917,7 @@ extension Clients {
 
     public func getNfsShare(
       request: GetNfsShareRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -932,12 +932,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.NfsShare.self, from: data)
+        GoogleCloudBareMetalSolutionV2.NfsShare.self, from: data)
     }
 
     public func listNfsShares(
       request: ListNfsSharesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListNfsSharesResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListNfsSharesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -956,7 +956,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.ListNfsSharesResponse.self, from: data)
+        GoogleCloudBareMetalSolutionV2.ListNfsSharesResponse.self, from: data)
     }
 
     public func updateNfsShare(
@@ -1012,7 +1012,7 @@ extension Clients {
 
     public func renameNfsShare(
       request: RenameNfsShareRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1029,7 +1029,7 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.NfsShare.self, from: data)
+        GoogleCloudBareMetalSolutionV2.NfsShare.self, from: data)
     }
 
     public func deleteNfsShare(
@@ -1054,7 +1054,7 @@ extension Clients {
 
     public func listProvisioningQuotas(
       request: ListProvisioningQuotasRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListProvisioningQuotasResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListProvisioningQuotasResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1072,12 +1072,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.ListProvisioningQuotasResponse.self, from: data)
+        GoogleCloudBareMetalSolutionV2.ListProvisioningQuotasResponse.self, from: data)
     }
 
     public func submitProvisioningConfig(
       request: SubmitProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.SubmitProvisioningConfigResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.SubmitProvisioningConfigResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1094,12 +1094,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.SubmitProvisioningConfigResponse.self, from: data)
+        GoogleCloudBareMetalSolutionV2.SubmitProvisioningConfigResponse.self, from: data)
     }
 
     public func getProvisioningConfig(
       request: GetProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1114,12 +1114,12 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.ProvisioningConfig.self, from: data)
+        GoogleCloudBareMetalSolutionV2.ProvisioningConfig.self, from: data)
     }
 
     public func createProvisioningConfig(
       request: CreateProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1140,12 +1140,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.ProvisioningConfig.self, from: data)
+        GoogleCloudBareMetalSolutionV2.ProvisioningConfig.self, from: data)
     }
 
     public func updateProvisioningConfig(
       request: UpdateProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.provisioningConfig.map({ $0.name }),
           !pathVariable0.isEmpty
@@ -1170,12 +1170,12 @@ extension Clients {
       }
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.ProvisioningConfig.self, from: data)
+        GoogleCloudBareMetalSolutionV2.ProvisioningConfig.self, from: data)
     }
 
     public func renameNetwork(
       request: RenameNetworkRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Network {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Network {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.name as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.name' is not set or is empty")
@@ -1192,12 +1192,12 @@ extension Clients {
       req.httpBody = try JSONEncoder().encode(request)
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.Network.self, from: data)
+        GoogleCloudBareMetalSolutionV2.Network.self, from: data)
     }
 
     public func listOsimages(
       request: ListOSImagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListOSImagesResponse {
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListOSImagesResponse {
       let path = try { () throws -> Swift.String in
         guard let pathVariable0 = request.parent as Swift.String?, !pathVariable0.isEmpty else {
           throw GoogleCloudGax.RequestError.binding("'request.parent' is not set or is empty")
@@ -1215,7 +1215,7 @@ extension Clients {
       req.setValue(Clients.clientHeader, forHTTPHeaderField: "X-Goog-Api-Client")
       let (data, _) = try await self.inner.rpc(for: req).get()
       return try GoogleCloudWkt._ProtoJSONDecoder().decode(
-        GoogleCloudBaremetalsolutionV2.ListOSImagesResponse.self, from: data)
+        GoogleCloudBareMetalSolutionV2.ListOSImagesResponse.self, from: data)
     }
 
     public func listLocations(

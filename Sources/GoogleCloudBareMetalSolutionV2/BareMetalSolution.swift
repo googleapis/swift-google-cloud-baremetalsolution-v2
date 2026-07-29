@@ -52,7 +52,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_ListInstances")
   public func listInstances(
     request: ListInstancesRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListInstancesResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListInstancesResponse {
     try await self.inner.listInstances(request: request, options: options)
   }
 
@@ -63,7 +63,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
     byItem: ListInstancesRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<Instance, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudBaremetalsolutionV2.ListInstancesResponse in
+      (token: Swift.String) async throws -> GoogleCloudBareMetalSolutionV2.ListInstancesResponse in
       var request = byItem
       request.pageToken = token
       return try await self.listInstances(request: request, options: options)
@@ -76,7 +76,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_GetInstance")
   public func getInstance(
     request: GetInstanceRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Instance {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Instance {
     try await self.inner.getInstance(request: request, options: options)
   }
 
@@ -149,7 +149,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_RenameInstance")
   public func renameInstance(
     request: RenameInstanceRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Instance {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Instance {
     try await self.inner.renameInstance(request: request, options: options)
   }
 
@@ -548,7 +548,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_ListSSHKeys")
   public func listSshkeys(
     request: ListSSHKeysRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListSSHKeysResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListSSHKeysResponse {
     try await self.inner.listSshkeys(request: request, options: options)
   }
 
@@ -560,7 +560,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
     byItem: ListSSHKeysRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<SSHKey, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudBaremetalsolutionV2.ListSSHKeysResponse in
+      (token: Swift.String) async throws -> GoogleCloudBareMetalSolutionV2.ListSSHKeysResponse in
       var request = byItem
       request.pageToken = token
       return try await self.listSshkeys(request: request, options: options)
@@ -574,7 +574,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_CreateSSHKey")
   public func createSshkey(
     request: CreateSSHKeyRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.SSHKey {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.SSHKey {
     try await self.inner.createSshkey(request: request, options: options)
   }
 
@@ -592,7 +592,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_ListVolumes")
   public func listVolumes(
     request: ListVolumesRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListVolumesResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListVolumesResponse {
     try await self.inner.listVolumes(request: request, options: options)
   }
 
@@ -603,7 +603,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
     byItem: ListVolumesRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<Volume, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudBaremetalsolutionV2.ListVolumesResponse in
+      (token: Swift.String) async throws -> GoogleCloudBareMetalSolutionV2.ListVolumesResponse in
       var request = byItem
       request.pageToken = token
       return try await self.listVolumes(request: request, options: options)
@@ -616,7 +616,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_GetVolume")
   public func getVolume(
     request: GetVolumeRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Volume {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Volume {
     try await self.inner.getVolume(request: request, options: options)
   }
 
@@ -689,7 +689,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_RenameVolume")
   public func renameVolume(
     request: RenameVolumeRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Volume {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Volume {
     try await self.inner.renameVolume(request: request, options: options)
   }
 
@@ -818,7 +818,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_ListNetworks")
   public func listNetworks(
     request: ListNetworksRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworksResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworksResponse {
     try await self.inner.listNetworks(request: request, options: options)
   }
 
@@ -829,7 +829,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
     byItem: ListNetworksRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<Network, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworksResponse in
+      (token: Swift.String) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworksResponse in
       var request = byItem
       request.pageToken = token
       return try await self.listNetworks(request: request, options: options)
@@ -843,7 +843,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_ListNetworkUsage")
   public func listNetworkUsage(
     request: ListNetworkUsageRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworkUsageResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworkUsageResponse {
     try await self.inner.listNetworkUsage(request: request, options: options)
   }
 
@@ -852,7 +852,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_GetNetwork")
   public func getNetwork(
     request: GetNetworkRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Network {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Network {
     try await self.inner.getNetwork(request: request, options: options)
   }
 
@@ -925,7 +925,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_CreateVolumeSnapshot")
   public func createVolumeSnapshot(
     request: CreateVolumeSnapshotRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot {
     try await self.inner.createVolumeSnapshot(request: request, options: options)
   }
 
@@ -1010,7 +1010,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_GetVolumeSnapshot")
   public func getVolumeSnapshot(
     request: GetVolumeSnapshotRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot {
     try await self.inner.getVolumeSnapshot(request: request, options: options)
   }
 
@@ -1021,7 +1021,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_ListVolumeSnapshots")
   public func listVolumeSnapshots(
     request: ListVolumeSnapshotsRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListVolumeSnapshotsResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListVolumeSnapshotsResponse {
     try await self.inner.listVolumeSnapshots(request: request, options: options)
   }
 
@@ -1035,7 +1035,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   ) throws -> any AsyncSequence<VolumeSnapshot, Swift.Error> {
     let listRpc = {
       (token: Swift.String) async throws
-        -> GoogleCloudBaremetalsolutionV2.ListVolumeSnapshotsResponse in
+        -> GoogleCloudBareMetalSolutionV2.ListVolumeSnapshotsResponse in
       var request = byItem
       request.pageToken = token
       return try await self.listVolumeSnapshots(request: request, options: options)
@@ -1048,7 +1048,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_GetLun")
   public func getLun(
     request: GetLunRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Lun {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Lun {
     try await self.inner.getLun(request: request, options: options)
   }
 
@@ -1057,7 +1057,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_ListLuns")
   public func listLuns(
     request: ListLunsRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListLunsResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListLunsResponse {
     try await self.inner.listLuns(request: request, options: options)
   }
 
@@ -1068,7 +1068,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
     byItem: ListLunsRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<Lun, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudBaremetalsolutionV2.ListLunsResponse in
+      (token: Swift.String) async throws -> GoogleCloudBareMetalSolutionV2.ListLunsResponse in
       var request = byItem
       request.pageToken = token
       return try await self.listLuns(request: request, options: options)
@@ -1138,7 +1138,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_GetNfsShare")
   public func getNfsShare(
     request: GetNfsShareRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare {
     try await self.inner.getNfsShare(request: request, options: options)
   }
 
@@ -1147,7 +1147,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_ListNfsShares")
   public func listNfsShares(
     request: ListNfsSharesRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListNfsSharesResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListNfsSharesResponse {
     try await self.inner.listNfsShares(request: request, options: options)
   }
 
@@ -1158,7 +1158,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
     byItem: ListNfsSharesRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<NfsShare, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudBaremetalsolutionV2.ListNfsSharesResponse in
+      (token: Swift.String) async throws -> GoogleCloudBareMetalSolutionV2.ListNfsSharesResponse in
       var request = byItem
       request.pageToken = token
       return try await self.listNfsShares(request: request, options: options)
@@ -1298,7 +1298,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_RenameNfsShare")
   public func renameNfsShare(
     request: RenameNfsShareRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare {
     try await self.inner.renameNfsShare(request: request, options: options)
   }
 
@@ -1362,7 +1362,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_ListProvisioningQuotas")
   public func listProvisioningQuotas(
     request: ListProvisioningQuotasRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListProvisioningQuotasResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListProvisioningQuotasResponse {
     try await self.inner.listProvisioningQuotas(request: request, options: options)
   }
 
@@ -1374,7 +1374,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   ) throws -> any AsyncSequence<ProvisioningQuota, Swift.Error> {
     let listRpc = {
       (token: Swift.String) async throws
-        -> GoogleCloudBaremetalsolutionV2.ListProvisioningQuotasResponse in
+        -> GoogleCloudBareMetalSolutionV2.ListProvisioningQuotasResponse in
       var request = byItem
       request.pageToken = token
       return try await self.listProvisioningQuotas(request: request, options: options)
@@ -1387,7 +1387,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_SubmitProvisioningConfig")
   public func submitProvisioningConfig(
     request: SubmitProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.SubmitProvisioningConfigResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.SubmitProvisioningConfigResponse {
     try await self.inner.submitProvisioningConfig(request: request, options: options)
   }
 
@@ -1396,7 +1396,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_GetProvisioningConfig")
   public func getProvisioningConfig(
     request: GetProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig {
     try await self.inner.getProvisioningConfig(request: request, options: options)
   }
 
@@ -1405,7 +1405,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_CreateProvisioningConfig")
   public func createProvisioningConfig(
     request: CreateProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig {
     try await self.inner.createProvisioningConfig(request: request, options: options)
   }
 
@@ -1414,7 +1414,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_UpdateProvisioningConfig")
   public func updateProvisioningConfig(
     request: UpdateProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig {
     try await self.inner.updateProvisioningConfig(request: request, options: options)
   }
 
@@ -1424,7 +1424,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_RenameNetwork")
   public func renameNetwork(
     request: RenameNetworkRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Network {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Network {
     try await self.inner.renameNetwork(request: request, options: options)
   }
 
@@ -1433,7 +1433,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
   /// @Snippet(path: "BareMetalSolution_ListOSImages")
   public func listOsimages(
     request: ListOSImagesRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListOSImagesResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListOSImagesResponse {
     try await self.inner.listOsimages(request: request, options: options)
   }
 
@@ -1444,7 +1444,7 @@ public class BareMetalSolutionClient: Clients.BareMetalSolutionProtocol {
     byItem: ListOSImagesRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<OSImage, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudBaremetalsolutionV2.ListOSImagesResponse in
+      (token: Swift.String) async throws -> GoogleCloudBareMetalSolutionV2.ListOSImagesResponse in
       var request = byItem
       request.pageToken = token
       return try await self.listOsimages(request: request, options: options)
@@ -1506,7 +1506,7 @@ extension Clients {
   public protocol BareMetalSolutionProtocol {
     /// See `BareMetalSolutionClient.listInstances`.
     func listInstances(request: ListInstancesRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.ListInstancesResponse
+      -> GoogleCloudBareMetalSolutionV2.ListInstancesResponse
 
     /// See `BareMetalSolutionClient.listInstances`.
     func listInstances(
@@ -1520,12 +1520,12 @@ extension Clients {
 
     /// See `BareMetalSolutionClient.getInstance`.
     func getInstance(request: GetInstanceRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.Instance
+      -> GoogleCloudBareMetalSolutionV2.Instance
 
     /// See `BareMetalSolutionClient.getInstance`.
     func getInstance(
       name: Swift.String,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Instance
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Instance
 
     /// See `BareMetalSolutionClient.updateInstance`.
     func updateInstance(request: UpdateInstanceRequest) async throws -> GoogleLongrunning.Operation
@@ -1542,13 +1542,13 @@ extension Clients {
 
     /// See `BareMetalSolutionClient.renameInstance`.
     func renameInstance(request: RenameInstanceRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.Instance
+      -> GoogleCloudBareMetalSolutionV2.Instance
 
     /// See `BareMetalSolutionClient.renameInstance`.
     func renameInstance(
       name: Swift.String,
       newInstanceId: Swift.String,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Instance
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Instance
 
     /// See `BareMetalSolutionClient.resetInstance`.
     func resetInstance(request: ResetInstanceRequest) async throws -> GoogleLongrunning.Operation
@@ -1627,7 +1627,7 @@ extension Clients {
 
     /// See `BareMetalSolutionClient.listSshkeys`.
     func listSshkeys(request: ListSSHKeysRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.ListSSHKeysResponse
+      -> GoogleCloudBareMetalSolutionV2.ListSSHKeysResponse
 
     /// See `BareMetalSolutionClient.listSshkeys`.
     func listSshkeys(
@@ -1641,14 +1641,14 @@ extension Clients {
 
     /// See `BareMetalSolutionClient.createSshkey`.
     func createSshkey(request: CreateSSHKeyRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.SSHKey
+      -> GoogleCloudBareMetalSolutionV2.SSHKey
 
     /// See `BareMetalSolutionClient.createSshkey`.
     func createSshkey(
       parent: Swift.String,
       sshKey: SSHKey?,
       sshKeyId: Swift.String,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.SSHKey
+    ) async throws -> GoogleCloudBareMetalSolutionV2.SSHKey
 
     /// See `BareMetalSolutionClient.deleteSshkey`.
     func deleteSshkey(request: DeleteSSHKeyRequest) async throws
@@ -1660,7 +1660,7 @@ extension Clients {
 
     /// See `BareMetalSolutionClient.listVolumes`.
     func listVolumes(request: ListVolumesRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.ListVolumesResponse
+      -> GoogleCloudBareMetalSolutionV2.ListVolumesResponse
 
     /// See `BareMetalSolutionClient.listVolumes`.
     func listVolumes(
@@ -1673,12 +1673,12 @@ extension Clients {
     ) throws -> any AsyncSequence<Volume, Swift.Error>
 
     /// See `BareMetalSolutionClient.getVolume`.
-    func getVolume(request: GetVolumeRequest) async throws -> GoogleCloudBaremetalsolutionV2.Volume
+    func getVolume(request: GetVolumeRequest) async throws -> GoogleCloudBareMetalSolutionV2.Volume
 
     /// See `BareMetalSolutionClient.getVolume`.
     func getVolume(
       name: Swift.String,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Volume
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Volume
 
     /// See `BareMetalSolutionClient.updateVolume`.
     func updateVolume(request: UpdateVolumeRequest) async throws -> GoogleLongrunning.Operation
@@ -1695,13 +1695,13 @@ extension Clients {
 
     /// See `BareMetalSolutionClient.renameVolume`.
     func renameVolume(request: RenameVolumeRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.Volume
+      -> GoogleCloudBareMetalSolutionV2.Volume
 
     /// See `BareMetalSolutionClient.renameVolume`.
     func renameVolume(
       name: Swift.String,
       newVolumeId: Swift.String,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Volume
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Volume
 
     /// See `BareMetalSolutionClient.evictVolume`.
     func evictVolume(request: EvictVolumeRequest) async throws -> GoogleLongrunning.Operation
@@ -1730,7 +1730,7 @@ extension Clients {
 
     /// See `BareMetalSolutionClient.listNetworks`.
     func listNetworks(request: ListNetworksRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.ListNetworksResponse
+      -> GoogleCloudBareMetalSolutionV2.ListNetworksResponse
 
     /// See `BareMetalSolutionClient.listNetworks`.
     func listNetworks(
@@ -1744,21 +1744,21 @@ extension Clients {
 
     /// See `BareMetalSolutionClient.listNetworkUsage`.
     func listNetworkUsage(request: ListNetworkUsageRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.ListNetworkUsageResponse
+      -> GoogleCloudBareMetalSolutionV2.ListNetworkUsageResponse
 
     /// See `BareMetalSolutionClient.listNetworkUsage`.
     func listNetworkUsage(
       location: Swift.String,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworkUsageResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworkUsageResponse
 
     /// See `BareMetalSolutionClient.getNetwork`.
     func getNetwork(request: GetNetworkRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.Network
+      -> GoogleCloudBareMetalSolutionV2.Network
 
     /// See `BareMetalSolutionClient.getNetwork`.
     func getNetwork(
       name: Swift.String,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Network
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Network
 
     /// See `BareMetalSolutionClient.updateNetwork`.
     func updateNetwork(request: UpdateNetworkRequest) async throws -> GoogleLongrunning.Operation
@@ -1775,13 +1775,13 @@ extension Clients {
 
     /// See `BareMetalSolutionClient.createVolumeSnapshot`.
     func createVolumeSnapshot(request: CreateVolumeSnapshotRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot
+      -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot
 
     /// See `BareMetalSolutionClient.createVolumeSnapshot`.
     func createVolumeSnapshot(
       parent: Swift.String,
       volumeSnapshot: VolumeSnapshot?,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot
+    ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot
 
     /// See `BareMetalSolutionClient.restoreVolumeSnapshot`.
     func restoreVolumeSnapshot(request: RestoreVolumeSnapshotRequest) async throws
@@ -1806,16 +1806,16 @@ extension Clients {
 
     /// See `BareMetalSolutionClient.getVolumeSnapshot`.
     func getVolumeSnapshot(request: GetVolumeSnapshotRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot
+      -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot
 
     /// See `BareMetalSolutionClient.getVolumeSnapshot`.
     func getVolumeSnapshot(
       name: Swift.String,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot
+    ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot
 
     /// See `BareMetalSolutionClient.listVolumeSnapshots`.
     func listVolumeSnapshots(request: ListVolumeSnapshotsRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.ListVolumeSnapshotsResponse
+      -> GoogleCloudBareMetalSolutionV2.ListVolumeSnapshotsResponse
 
     /// See `BareMetalSolutionClient.listVolumeSnapshots`.
     func listVolumeSnapshots(
@@ -1828,16 +1828,16 @@ extension Clients {
     ) throws -> any AsyncSequence<VolumeSnapshot, Swift.Error>
 
     /// See `BareMetalSolutionClient.getLun`.
-    func getLun(request: GetLunRequest) async throws -> GoogleCloudBaremetalsolutionV2.Lun
+    func getLun(request: GetLunRequest) async throws -> GoogleCloudBareMetalSolutionV2.Lun
 
     /// See `BareMetalSolutionClient.getLun`.
     func getLun(
       name: Swift.String,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Lun
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Lun
 
     /// See `BareMetalSolutionClient.listLuns`.
     func listLuns(request: ListLunsRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.ListLunsResponse
+      -> GoogleCloudBareMetalSolutionV2.ListLunsResponse
 
     /// See `BareMetalSolutionClient.listLuns`.
     func listLuns(
@@ -1863,16 +1863,16 @@ extension Clients {
 
     /// See `BareMetalSolutionClient.getNfsShare`.
     func getNfsShare(request: GetNfsShareRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.NfsShare
+      -> GoogleCloudBareMetalSolutionV2.NfsShare
 
     /// See `BareMetalSolutionClient.getNfsShare`.
     func getNfsShare(
       name: Swift.String,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare
+    ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare
 
     /// See `BareMetalSolutionClient.listNfsShares`.
     func listNfsShares(request: ListNfsSharesRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.ListNfsSharesResponse
+      -> GoogleCloudBareMetalSolutionV2.ListNfsSharesResponse
 
     /// See `BareMetalSolutionClient.listNfsShares`.
     func listNfsShares(
@@ -1912,13 +1912,13 @@ extension Clients {
 
     /// See `BareMetalSolutionClient.renameNfsShare`.
     func renameNfsShare(request: RenameNfsShareRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.NfsShare
+      -> GoogleCloudBareMetalSolutionV2.NfsShare
 
     /// See `BareMetalSolutionClient.renameNfsShare`.
     func renameNfsShare(
       name: Swift.String,
       newNfsshareId: Swift.String,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare
+    ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare
 
     /// See `BareMetalSolutionClient.deleteNfsShare`.
     func deleteNfsShare(request: DeleteNfsShareRequest) async throws -> GoogleLongrunning.Operation
@@ -1934,7 +1934,7 @@ extension Clients {
 
     /// See `BareMetalSolutionClient.listProvisioningQuotas`.
     func listProvisioningQuotas(request: ListProvisioningQuotasRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.ListProvisioningQuotasResponse
+      -> GoogleCloudBareMetalSolutionV2.ListProvisioningQuotasResponse
 
     /// See `BareMetalSolutionClient.listProvisioningQuotas`.
     func listProvisioningQuotas(
@@ -1948,56 +1948,56 @@ extension Clients {
 
     /// See `BareMetalSolutionClient.submitProvisioningConfig`.
     func submitProvisioningConfig(request: SubmitProvisioningConfigRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.SubmitProvisioningConfigResponse
+      -> GoogleCloudBareMetalSolutionV2.SubmitProvisioningConfigResponse
 
     /// See `BareMetalSolutionClient.submitProvisioningConfig`.
     func submitProvisioningConfig(
       parent: Swift.String,
       provisioningConfig: ProvisioningConfig?,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.SubmitProvisioningConfigResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.SubmitProvisioningConfigResponse
 
     /// See `BareMetalSolutionClient.getProvisioningConfig`.
     func getProvisioningConfig(request: GetProvisioningConfigRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+      -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
 
     /// See `BareMetalSolutionClient.getProvisioningConfig`.
     func getProvisioningConfig(
       name: Swift.String,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
 
     /// See `BareMetalSolutionClient.createProvisioningConfig`.
     func createProvisioningConfig(request: CreateProvisioningConfigRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+      -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
 
     /// See `BareMetalSolutionClient.createProvisioningConfig`.
     func createProvisioningConfig(
       parent: Swift.String,
       provisioningConfig: ProvisioningConfig?,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
 
     /// See `BareMetalSolutionClient.updateProvisioningConfig`.
     func updateProvisioningConfig(request: UpdateProvisioningConfigRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+      -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
 
     /// See `BareMetalSolutionClient.updateProvisioningConfig`.
     func updateProvisioningConfig(
       provisioningConfig: ProvisioningConfig?,
       updateMask: GoogleCloudWkt.FieldMask?,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
 
     /// See `BareMetalSolutionClient.renameNetwork`.
     func renameNetwork(request: RenameNetworkRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.Network
+      -> GoogleCloudBareMetalSolutionV2.Network
 
     /// See `BareMetalSolutionClient.renameNetwork`.
     func renameNetwork(
       name: Swift.String,
       newNetworkId: Swift.String,
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Network
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Network
 
     /// See `BareMetalSolutionClient.listOsimages`.
     func listOsimages(request: ListOSImagesRequest) async throws
-      -> GoogleCloudBaremetalsolutionV2.ListOSImagesResponse
+      -> GoogleCloudBareMetalSolutionV2.ListOSImagesResponse
 
     /// See `BareMetalSolutionClient.listOsimages`.
     func listOsimages(
@@ -2025,7 +2025,7 @@ extension Clients {
     /// See `BareMetalSolutionClient.listInstances`.
     func listInstances(
       request: ListInstancesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListInstancesResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListInstancesResponse
 
     /// See `BareMetalSolutionClient.listInstances`.
     func listInstances(
@@ -2035,7 +2035,7 @@ extension Clients {
     /// See `BareMetalSolutionClient.getInstance`.
     func getInstance(
       request: GetInstanceRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Instance
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Instance
 
     /// See `BareMetalSolutionClient.updateInstance`.
     func updateInstance(
@@ -2050,7 +2050,7 @@ extension Clients {
     /// See `BareMetalSolutionClient.renameInstance`.
     func renameInstance(
       request: RenameInstanceRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Instance
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Instance
 
     /// See `BareMetalSolutionClient.resetInstance`.
     func resetInstance(
@@ -2115,7 +2115,7 @@ extension Clients {
     /// See `BareMetalSolutionClient.listSshkeys`.
     func listSshkeys(
       request: ListSSHKeysRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListSSHKeysResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListSSHKeysResponse
 
     /// See `BareMetalSolutionClient.listSshkeys`.
     func listSshkeys(
@@ -2125,7 +2125,7 @@ extension Clients {
     /// See `BareMetalSolutionClient.createSshkey`.
     func createSshkey(
       request: CreateSSHKeyRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.SSHKey
+    ) async throws -> GoogleCloudBareMetalSolutionV2.SSHKey
 
     /// See `BareMetalSolutionClient.deleteSshkey`.
     func deleteSshkey(
@@ -2135,7 +2135,7 @@ extension Clients {
     /// See `BareMetalSolutionClient.listVolumes`.
     func listVolumes(
       request: ListVolumesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListVolumesResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListVolumesResponse
 
     /// See `BareMetalSolutionClient.listVolumes`.
     func listVolumes(
@@ -2145,7 +2145,7 @@ extension Clients {
     /// See `BareMetalSolutionClient.getVolume`.
     func getVolume(
       request: GetVolumeRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Volume
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Volume
 
     /// See `BareMetalSolutionClient.updateVolume`.
     func updateVolume(
@@ -2160,7 +2160,7 @@ extension Clients {
     /// See `BareMetalSolutionClient.renameVolume`.
     func renameVolume(
       request: RenameVolumeRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Volume
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Volume
 
     /// See `BareMetalSolutionClient.evictVolume`.
     func evictVolume(
@@ -2185,7 +2185,7 @@ extension Clients {
     /// See `BareMetalSolutionClient.listNetworks`.
     func listNetworks(
       request: ListNetworksRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworksResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworksResponse
 
     /// See `BareMetalSolutionClient.listNetworks`.
     func listNetworks(
@@ -2195,12 +2195,12 @@ extension Clients {
     /// See `BareMetalSolutionClient.listNetworkUsage`.
     func listNetworkUsage(
       request: ListNetworkUsageRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworkUsageResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworkUsageResponse
 
     /// See `BareMetalSolutionClient.getNetwork`.
     func getNetwork(
       request: GetNetworkRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Network
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Network
 
     /// See `BareMetalSolutionClient.updateNetwork`.
     func updateNetwork(
@@ -2215,7 +2215,7 @@ extension Clients {
     /// See `BareMetalSolutionClient.createVolumeSnapshot`.
     func createVolumeSnapshot(
       request: CreateVolumeSnapshotRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot
+    ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot
 
     /// See `BareMetalSolutionClient.restoreVolumeSnapshot`.
     func restoreVolumeSnapshot(
@@ -2235,12 +2235,12 @@ extension Clients {
     /// See `BareMetalSolutionClient.getVolumeSnapshot`.
     func getVolumeSnapshot(
       request: GetVolumeSnapshotRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot
+    ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot
 
     /// See `BareMetalSolutionClient.listVolumeSnapshots`.
     func listVolumeSnapshots(
       request: ListVolumeSnapshotsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListVolumeSnapshotsResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListVolumeSnapshotsResponse
 
     /// See `BareMetalSolutionClient.listVolumeSnapshots`.
     func listVolumeSnapshots(
@@ -2250,12 +2250,12 @@ extension Clients {
     /// See `BareMetalSolutionClient.getLun`.
     func getLun(
       request: GetLunRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Lun
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Lun
 
     /// See `BareMetalSolutionClient.listLuns`.
     func listLuns(
       request: ListLunsRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListLunsResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListLunsResponse
 
     /// See `BareMetalSolutionClient.listLuns`.
     func listLuns(
@@ -2275,12 +2275,12 @@ extension Clients {
     /// See `BareMetalSolutionClient.getNfsShare`.
     func getNfsShare(
       request: GetNfsShareRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare
+    ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare
 
     /// See `BareMetalSolutionClient.listNfsShares`.
     func listNfsShares(
       request: ListNfsSharesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListNfsSharesResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListNfsSharesResponse
 
     /// See `BareMetalSolutionClient.listNfsShares`.
     func listNfsShares(
@@ -2310,7 +2310,7 @@ extension Clients {
     /// See `BareMetalSolutionClient.renameNfsShare`.
     func renameNfsShare(
       request: RenameNfsShareRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare
+    ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare
 
     /// See `BareMetalSolutionClient.deleteNfsShare`.
     func deleteNfsShare(
@@ -2325,7 +2325,7 @@ extension Clients {
     /// See `BareMetalSolutionClient.listProvisioningQuotas`.
     func listProvisioningQuotas(
       request: ListProvisioningQuotasRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListProvisioningQuotasResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListProvisioningQuotasResponse
 
     /// See `BareMetalSolutionClient.listProvisioningQuotas`.
     func listProvisioningQuotas(
@@ -2335,32 +2335,32 @@ extension Clients {
     /// See `BareMetalSolutionClient.submitProvisioningConfig`.
     func submitProvisioningConfig(
       request: SubmitProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.SubmitProvisioningConfigResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.SubmitProvisioningConfigResponse
 
     /// See `BareMetalSolutionClient.getProvisioningConfig`.
     func getProvisioningConfig(
       request: GetProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
 
     /// See `BareMetalSolutionClient.createProvisioningConfig`.
     func createProvisioningConfig(
       request: CreateProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
 
     /// See `BareMetalSolutionClient.updateProvisioningConfig`.
     func updateProvisioningConfig(
       request: UpdateProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
 
     /// See `BareMetalSolutionClient.renameNetwork`.
     func renameNetwork(
       request: RenameNetworkRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.Network
+    ) async throws -> GoogleCloudBareMetalSolutionV2.Network
 
     /// See `BareMetalSolutionClient.listOsimages`.
     func listOsimages(
       request: ListOSImagesRequest, options: GoogleCloudGax.RequestOptions
-    ) async throws -> GoogleCloudBaremetalsolutionV2.ListOSImagesResponse
+    ) async throws -> GoogleCloudBareMetalSolutionV2.ListOSImagesResponse
 
     /// See `BareMetalSolutionClient.listOsimages`.
     func listOsimages(
@@ -2387,14 +2387,14 @@ extension Clients {
 // Default implementations
 extension Clients.BareMetalSolutionProtocol {
   public func listInstances(request: ListInstancesRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.ListInstancesResponse
+    -> GoogleCloudBareMetalSolutionV2.ListInstancesResponse
   {
     try await self.listInstances(request: request, options: .init())
   }
 
   public func listInstances(
     request: ListInstancesRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListInstancesResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListInstancesResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -2408,7 +2408,7 @@ extension Clients.BareMetalSolutionProtocol {
     byItem: ListInstancesRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<Instance, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudBaremetalsolutionV2.ListInstancesResponse in
+      (token: Swift.String) async throws -> GoogleCloudBareMetalSolutionV2.ListInstancesResponse in
       throw GoogleCloudGax.RequestError.unimplemented
     }
     return GoogleCloudGax.PaginatedResponseSequence(listRpc: listRpc)
@@ -2424,20 +2424,20 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func getInstance(request: GetInstanceRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.Instance
+    -> GoogleCloudBareMetalSolutionV2.Instance
   {
     try await self.getInstance(request: request, options: .init())
   }
 
   public func getInstance(
     request: GetInstanceRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Instance {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Instance {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func getInstance(
     name: Swift.String,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Instance {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Instance {
     let request = GetInstanceRequest().with {
       $0.name = name
     }
@@ -2484,21 +2484,21 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func renameInstance(request: RenameInstanceRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.Instance
+    -> GoogleCloudBareMetalSolutionV2.Instance
   {
     try await self.renameInstance(request: request, options: .init())
   }
 
   public func renameInstance(
     request: RenameInstanceRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Instance {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Instance {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func renameInstance(
     name: Swift.String,
     newInstanceId: Swift.String,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Instance {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Instance {
     let request = RenameInstanceRequest().with {
       $0.name = name
       $0.newInstanceId = newInstanceId
@@ -2735,14 +2735,14 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func listSshkeys(request: ListSSHKeysRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.ListSSHKeysResponse
+    -> GoogleCloudBareMetalSolutionV2.ListSSHKeysResponse
   {
     try await self.listSshkeys(request: request, options: .init())
   }
 
   public func listSshkeys(
     request: ListSSHKeysRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListSSHKeysResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListSSHKeysResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -2756,7 +2756,7 @@ extension Clients.BareMetalSolutionProtocol {
     byItem: ListSSHKeysRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<SSHKey, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudBaremetalsolutionV2.ListSSHKeysResponse in
+      (token: Swift.String) async throws -> GoogleCloudBareMetalSolutionV2.ListSSHKeysResponse in
       throw GoogleCloudGax.RequestError.unimplemented
     }
     return GoogleCloudGax.PaginatedResponseSequence(listRpc: listRpc)
@@ -2772,14 +2772,14 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func createSshkey(request: CreateSSHKeyRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.SSHKey
+    -> GoogleCloudBareMetalSolutionV2.SSHKey
   {
     try await self.createSshkey(request: request, options: .init())
   }
 
   public func createSshkey(
     request: CreateSSHKeyRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.SSHKey {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.SSHKey {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -2787,7 +2787,7 @@ extension Clients.BareMetalSolutionProtocol {
     parent: Swift.String,
     sshKey: SSHKey?,
     sshKeyId: Swift.String,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.SSHKey {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.SSHKey {
     let request = CreateSSHKeyRequest().with {
       $0.parent = parent
       $0.sshKey = sshKey
@@ -2816,14 +2816,14 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func listVolumes(request: ListVolumesRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.ListVolumesResponse
+    -> GoogleCloudBareMetalSolutionV2.ListVolumesResponse
   {
     try await self.listVolumes(request: request, options: .init())
   }
 
   public func listVolumes(
     request: ListVolumesRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListVolumesResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListVolumesResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -2837,7 +2837,7 @@ extension Clients.BareMetalSolutionProtocol {
     byItem: ListVolumesRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<Volume, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudBaremetalsolutionV2.ListVolumesResponse in
+      (token: Swift.String) async throws -> GoogleCloudBareMetalSolutionV2.ListVolumesResponse in
       throw GoogleCloudGax.RequestError.unimplemented
     }
     return GoogleCloudGax.PaginatedResponseSequence(listRpc: listRpc)
@@ -2853,20 +2853,20 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func getVolume(request: GetVolumeRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.Volume
+    -> GoogleCloudBareMetalSolutionV2.Volume
   {
     try await self.getVolume(request: request, options: .init())
   }
 
   public func getVolume(
     request: GetVolumeRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Volume {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Volume {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func getVolume(
     name: Swift.String,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Volume {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Volume {
     let request = GetVolumeRequest().with {
       $0.name = name
     }
@@ -2912,21 +2912,21 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func renameVolume(request: RenameVolumeRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.Volume
+    -> GoogleCloudBareMetalSolutionV2.Volume
   {
     try await self.renameVolume(request: request, options: .init())
   }
 
   public func renameVolume(
     request: RenameVolumeRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Volume {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Volume {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func renameVolume(
     name: Swift.String,
     newVolumeId: Swift.String,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Volume {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Volume {
     let request = RenameVolumeRequest().with {
       $0.name = name
       $0.newVolumeId = newVolumeId
@@ -3008,14 +3008,14 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func listNetworks(request: ListNetworksRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.ListNetworksResponse
+    -> GoogleCloudBareMetalSolutionV2.ListNetworksResponse
   {
     try await self.listNetworks(request: request, options: .init())
   }
 
   public func listNetworks(
     request: ListNetworksRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworksResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworksResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -3029,7 +3029,7 @@ extension Clients.BareMetalSolutionProtocol {
     byItem: ListNetworksRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<Network, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworksResponse in
+      (token: Swift.String) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworksResponse in
       throw GoogleCloudGax.RequestError.unimplemented
     }
     return GoogleCloudGax.PaginatedResponseSequence(listRpc: listRpc)
@@ -3045,20 +3045,20 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func listNetworkUsage(request: ListNetworkUsageRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.ListNetworkUsageResponse
+    -> GoogleCloudBareMetalSolutionV2.ListNetworkUsageResponse
   {
     try await self.listNetworkUsage(request: request, options: .init())
   }
 
   public func listNetworkUsage(
     request: ListNetworkUsageRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworkUsageResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworkUsageResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func listNetworkUsage(
     location: Swift.String,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListNetworkUsageResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListNetworkUsageResponse {
     let request = ListNetworkUsageRequest().with {
       $0.location = location
     }
@@ -3066,20 +3066,20 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func getNetwork(request: GetNetworkRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.Network
+    -> GoogleCloudBareMetalSolutionV2.Network
   {
     try await self.getNetwork(request: request, options: .init())
   }
 
   public func getNetwork(
     request: GetNetworkRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Network {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Network {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func getNetwork(
     name: Swift.String,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Network {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Network {
     let request = GetNetworkRequest().with {
       $0.name = name
     }
@@ -3126,21 +3126,21 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func createVolumeSnapshot(request: CreateVolumeSnapshotRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot
+    -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot
   {
     try await self.createVolumeSnapshot(request: request, options: .init())
   }
 
   public func createVolumeSnapshot(
     request: CreateVolumeSnapshotRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func createVolumeSnapshot(
     parent: Swift.String,
     volumeSnapshot: VolumeSnapshot?,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot {
     let request = CreateVolumeSnapshotRequest().with {
       $0.parent = parent
       $0.volumeSnapshot = volumeSnapshot
@@ -3205,20 +3205,20 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func getVolumeSnapshot(request: GetVolumeSnapshotRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot
+    -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot
   {
     try await self.getVolumeSnapshot(request: request, options: .init())
   }
 
   public func getVolumeSnapshot(
     request: GetVolumeSnapshotRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func getVolumeSnapshot(
     name: Swift.String,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.VolumeSnapshot {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.VolumeSnapshot {
     let request = GetVolumeSnapshotRequest().with {
       $0.name = name
     }
@@ -3226,14 +3226,14 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func listVolumeSnapshots(request: ListVolumeSnapshotsRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.ListVolumeSnapshotsResponse
+    -> GoogleCloudBareMetalSolutionV2.ListVolumeSnapshotsResponse
   {
     try await self.listVolumeSnapshots(request: request, options: .init())
   }
 
   public func listVolumeSnapshots(
     request: ListVolumeSnapshotsRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListVolumeSnapshotsResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListVolumeSnapshotsResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -3248,7 +3248,7 @@ extension Clients.BareMetalSolutionProtocol {
   ) throws -> any AsyncSequence<VolumeSnapshot, Swift.Error> {
     let listRpc = {
       (token: Swift.String) async throws
-        -> GoogleCloudBaremetalsolutionV2.ListVolumeSnapshotsResponse in
+        -> GoogleCloudBareMetalSolutionV2.ListVolumeSnapshotsResponse in
       throw GoogleCloudGax.RequestError.unimplemented
     }
     return GoogleCloudGax.PaginatedResponseSequence(listRpc: listRpc)
@@ -3263,19 +3263,19 @@ extension Clients.BareMetalSolutionProtocol {
     return try self.listVolumeSnapshots(byItem: request)
   }
 
-  public func getLun(request: GetLunRequest) async throws -> GoogleCloudBaremetalsolutionV2.Lun {
+  public func getLun(request: GetLunRequest) async throws -> GoogleCloudBareMetalSolutionV2.Lun {
     try await self.getLun(request: request, options: .init())
   }
 
   public func getLun(
     request: GetLunRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Lun {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Lun {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func getLun(
     name: Swift.String,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Lun {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Lun {
     let request = GetLunRequest().with {
       $0.name = name
     }
@@ -3283,14 +3283,14 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func listLuns(request: ListLunsRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.ListLunsResponse
+    -> GoogleCloudBareMetalSolutionV2.ListLunsResponse
   {
     try await self.listLuns(request: request, options: .init())
   }
 
   public func listLuns(
     request: ListLunsRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListLunsResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListLunsResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -3304,7 +3304,7 @@ extension Clients.BareMetalSolutionProtocol {
     byItem: ListLunsRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<Lun, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudBaremetalsolutionV2.ListLunsResponse in
+      (token: Swift.String) async throws -> GoogleCloudBareMetalSolutionV2.ListLunsResponse in
       throw GoogleCloudGax.RequestError.unimplemented
     }
     return GoogleCloudGax.PaginatedResponseSequence(listRpc: listRpc)
@@ -3355,20 +3355,20 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func getNfsShare(request: GetNfsShareRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.NfsShare
+    -> GoogleCloudBareMetalSolutionV2.NfsShare
   {
     try await self.getNfsShare(request: request, options: .init())
   }
 
   public func getNfsShare(
     request: GetNfsShareRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func getNfsShare(
     name: Swift.String,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare {
     let request = GetNfsShareRequest().with {
       $0.name = name
     }
@@ -3376,14 +3376,14 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func listNfsShares(request: ListNfsSharesRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.ListNfsSharesResponse
+    -> GoogleCloudBareMetalSolutionV2.ListNfsSharesResponse
   {
     try await self.listNfsShares(request: request, options: .init())
   }
 
   public func listNfsShares(
     request: ListNfsSharesRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListNfsSharesResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListNfsSharesResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -3397,7 +3397,7 @@ extension Clients.BareMetalSolutionProtocol {
     byItem: ListNfsSharesRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<NfsShare, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudBaremetalsolutionV2.ListNfsSharesResponse in
+      (token: Swift.String) async throws -> GoogleCloudBareMetalSolutionV2.ListNfsSharesResponse in
       throw GoogleCloudGax.RequestError.unimplemented
     }
     return GoogleCloudGax.PaginatedResponseSequence(listRpc: listRpc)
@@ -3491,21 +3491,21 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func renameNfsShare(request: RenameNfsShareRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.NfsShare
+    -> GoogleCloudBareMetalSolutionV2.NfsShare
   {
     try await self.renameNfsShare(request: request, options: .init())
   }
 
   public func renameNfsShare(
     request: RenameNfsShareRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func renameNfsShare(
     name: Swift.String,
     newNfsshareId: Swift.String,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.NfsShare {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.NfsShare {
     let request = RenameNfsShareRequest().with {
       $0.name = name
       $0.newNfsshareId = newNfsshareId
@@ -3551,14 +3551,14 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func listProvisioningQuotas(request: ListProvisioningQuotasRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.ListProvisioningQuotasResponse
+    -> GoogleCloudBareMetalSolutionV2.ListProvisioningQuotasResponse
   {
     try await self.listProvisioningQuotas(request: request, options: .init())
   }
 
   public func listProvisioningQuotas(
     request: ListProvisioningQuotasRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListProvisioningQuotasResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListProvisioningQuotasResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -3573,7 +3573,7 @@ extension Clients.BareMetalSolutionProtocol {
   ) throws -> any AsyncSequence<ProvisioningQuota, Swift.Error> {
     let listRpc = {
       (token: Swift.String) async throws
-        -> GoogleCloudBaremetalsolutionV2.ListProvisioningQuotasResponse in
+        -> GoogleCloudBareMetalSolutionV2.ListProvisioningQuotasResponse in
       throw GoogleCloudGax.RequestError.unimplemented
     }
     return GoogleCloudGax.PaginatedResponseSequence(listRpc: listRpc)
@@ -3589,21 +3589,21 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func submitProvisioningConfig(request: SubmitProvisioningConfigRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.SubmitProvisioningConfigResponse
+    -> GoogleCloudBareMetalSolutionV2.SubmitProvisioningConfigResponse
   {
     try await self.submitProvisioningConfig(request: request, options: .init())
   }
 
   public func submitProvisioningConfig(
     request: SubmitProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.SubmitProvisioningConfigResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.SubmitProvisioningConfigResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func submitProvisioningConfig(
     parent: Swift.String,
     provisioningConfig: ProvisioningConfig?,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.SubmitProvisioningConfigResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.SubmitProvisioningConfigResponse {
     let request = SubmitProvisioningConfigRequest().with {
       $0.parent = parent
       $0.provisioningConfig = provisioningConfig
@@ -3612,20 +3612,20 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func getProvisioningConfig(request: GetProvisioningConfigRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+    -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
   {
     try await self.getProvisioningConfig(request: request, options: .init())
   }
 
   public func getProvisioningConfig(
     request: GetProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func getProvisioningConfig(
     name: Swift.String,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig {
     let request = GetProvisioningConfigRequest().with {
       $0.name = name
     }
@@ -3633,21 +3633,21 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func createProvisioningConfig(request: CreateProvisioningConfigRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+    -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
   {
     try await self.createProvisioningConfig(request: request, options: .init())
   }
 
   public func createProvisioningConfig(
     request: CreateProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func createProvisioningConfig(
     parent: Swift.String,
     provisioningConfig: ProvisioningConfig?,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig {
     let request = CreateProvisioningConfigRequest().with {
       $0.parent = parent
       $0.provisioningConfig = provisioningConfig
@@ -3656,21 +3656,21 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func updateProvisioningConfig(request: UpdateProvisioningConfigRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig
+    -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig
   {
     try await self.updateProvisioningConfig(request: request, options: .init())
   }
 
   public func updateProvisioningConfig(
     request: UpdateProvisioningConfigRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func updateProvisioningConfig(
     provisioningConfig: ProvisioningConfig?,
     updateMask: GoogleCloudWkt.FieldMask?,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ProvisioningConfig {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ProvisioningConfig {
     let request = UpdateProvisioningConfigRequest().with {
       $0.provisioningConfig = provisioningConfig
       $0.updateMask = updateMask
@@ -3679,21 +3679,21 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func renameNetwork(request: RenameNetworkRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.Network
+    -> GoogleCloudBareMetalSolutionV2.Network
   {
     try await self.renameNetwork(request: request, options: .init())
   }
 
   public func renameNetwork(
     request: RenameNetworkRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Network {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Network {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
   public func renameNetwork(
     name: Swift.String,
     newNetworkId: Swift.String,
-  ) async throws -> GoogleCloudBaremetalsolutionV2.Network {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.Network {
     let request = RenameNetworkRequest().with {
       $0.name = name
       $0.newNetworkId = newNetworkId
@@ -3702,14 +3702,14 @@ extension Clients.BareMetalSolutionProtocol {
   }
 
   public func listOsimages(request: ListOSImagesRequest) async throws
-    -> GoogleCloudBaremetalsolutionV2.ListOSImagesResponse
+    -> GoogleCloudBareMetalSolutionV2.ListOSImagesResponse
   {
     try await self.listOsimages(request: request, options: .init())
   }
 
   public func listOsimages(
     request: ListOSImagesRequest, options: GoogleCloudGax.RequestOptions
-  ) async throws -> GoogleCloudBaremetalsolutionV2.ListOSImagesResponse {
+  ) async throws -> GoogleCloudBareMetalSolutionV2.ListOSImagesResponse {
     throw GoogleCloudGax.RequestError.unimplemented
   }
 
@@ -3723,7 +3723,7 @@ extension Clients.BareMetalSolutionProtocol {
     byItem: ListOSImagesRequest, options: GoogleCloudGax.RequestOptions
   ) throws -> any AsyncSequence<OSImage, Swift.Error> {
     let listRpc = {
-      (token: Swift.String) async throws -> GoogleCloudBaremetalsolutionV2.ListOSImagesResponse in
+      (token: Swift.String) async throws -> GoogleCloudBareMetalSolutionV2.ListOSImagesResponse in
       throw GoogleCloudGax.RequestError.unimplemented
     }
     return GoogleCloudGax.PaginatedResponseSequence(listRpc: listRpc)
